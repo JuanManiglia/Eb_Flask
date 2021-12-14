@@ -1,7 +1,7 @@
 from flask import Flask
 # print a nice greeting.
 def say_hello(username = "World"):
-    return '<p>Hello %s!</p>\n' % username
+    return '<p>Bye %s!</p>\n' % username
 # some bits of text for the page.
 header_text = '''
 <html>\n<head> <title>EB Flask Test</title> </head>\n<body>'''
@@ -22,3 +22,5 @@ header_text + say_hello(username) + home_link + footer_text))
 if __name__ == "__main__":
     application.debug = True
     application.run()
+
+    
